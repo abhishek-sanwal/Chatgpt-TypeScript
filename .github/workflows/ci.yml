@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - main
-      
+
 jobs:
   lint:
     runs-on: ubuntu-22.04
@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - run: yarn i
+      - run: npm i
       - run: npm run build
   test:
     runs-on: ubuntu-22.04
